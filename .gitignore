@@ -1,0 +1,39 @@
+# Never commit your mapping workspace. It holds target company names, owner
+# names, and the reasoning behind a live acquisition thesis. Owner names are
+# personal data in most jurisdictions. Keep the workspace outside this repo, or
+# ignored inside it.
+workspace/
+my-mapping/
+maps/
+runs/
+*.local.md
+
+# Your own filled-in working files, if you keep them in here.
+# Anchored to the repo root so the templates/ copies stay tracked.
+/BUY-BOX.md
+/buy-box.md
+/targets.csv
+/market-map-*.md
+/rubric-*.md
+/run-*.md
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Data exports
+*.csv
+!templates/*.csv
+!samples/*.csv
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+
+# Logs
+*.log
